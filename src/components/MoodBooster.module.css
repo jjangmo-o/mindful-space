@@ -1,0 +1,36 @@
+/* The container box */
+.wrapper {
+  text-align: center;
+  margin: 20px 0;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 15px; /* Rounded corners */
+  background-color: #fdfbf7; /* Warm background */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* Subtle shadow */
+}
+
+/* The quote text */
+.quote {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-style: italic;
+  color: #555;
+  min-height: 60px; /* Keeps box size stable */
+}
+
+/* The button */
+.button {
+  padding: 10px 25px;
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth color change */
+}
+
+/* CSS Magic: Change color when mouse hovers */
+.button:hover {
+  background-color: #008ba3;
+}

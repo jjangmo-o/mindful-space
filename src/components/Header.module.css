@@ -1,0 +1,18 @@
+.wrapper {
+  background-color: #e0f7fa;
+  padding: 20px;
+  text-align: center;
+  color: #333;
+  border-bottom: 2px solid #b2ebf2; /* Added a nice border */
+}
+
+.title {
+  font-size: 2.5rem;
+  margin: 0;
+  color: #006064;
+}
+
+.subtitle {
+  font-style: italic;
+  color: #555;
+}

@@ -1,0 +1,22 @@
+.card{
+    background-color: white;
+    padding: 20px;
+    border-left: 4px solid #00bcd4;
+    margin-bottom: 15px;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s;
+}
+
+.title {
+    font-weight: bold;
+    color: #173167;
+    margin-top: 0;
+}
+
+.description {
+    color: #555;
+}
+
+.card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}

@@ -1,51 +1,7 @@
-import { useState } from 'react';
 import './App.css'; 
-
-// --- Child Components ---
-
-function Header() {
-  return (
-    <header style={{ backgroundColor: "#e0f7fa", padding: "20px", textAlign: "center", color: "#333" }}>
-      <h1>MindfulSpace 🌿</h1>
-      <p>Mental Health Awareness & Resources</p>
-    </header>
-  );
-}
-
-function TipCard(props) {
-  return (
-    <div style={{ borderLeft: "4px solid #00bcd4", margin: "10px 0", padding: "10px", backgroundColor: "#fff", color: "#333" }}>
-      <h3 style={{ margin: "0 0 5px 0" }}>{props.title}</h3>
-      <p style={{ margin: 0 }}>{props.description}</p>
-    </div>
-  );
-}
-
-function MoodBooster() {
-  const [quote, setQuote] = useState("Remember to breathe.");
-
-  const generateQuote = () => {
-    const options = [
-      "You are enough.",
-      "One day at a time.",
-      "Self-care is not selfish.",
-      "It is okay to rest."
-    ];
-    const random = Math.floor(Math.random() * options.length);
-    setQuote(options[random]);
-  };
-
-  return (
-    <div style={{ textAlign: "center", margin: "20px 0", padding: "20px", border: "1px solid #ccc", borderRadius: "8px" }}>
-      <div style={{ fontSize: "1.2rem", marginBottom: "10px", fontStyle: "italic" }}>
-        "{quote}"
-      </div>
-      <button onClick={generateQuote} style={{ padding: "8px 16px", cursor: "pointer" }}>
-        Get a Boost
-      </button>
-    </div>
-  );
-}
+import Header from './components/Header.jsx';
+import MoodBooster from './components/MoodBooster.jsx';
+import TipCard from './components/TipCard.jsx';
 
 // --- Main App Component ---
 
