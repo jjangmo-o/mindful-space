@@ -1,16 +1,58 @@
-# React + Vite
+# MindfulSpace 🌿
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple, interactive mental health awareness application built to practice modern React development. The app provides daily motivation through a quote generator and allows users to manage a list of personal mental health tips.
 
-Currently, two official plugins are available:
+**[🔴 View Live Demo](https://mindful-space-psi.vercel.app/)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Dynamic Quote Generator:** Fetches real-time inspiring quotes from an external API.
+* **Interactive Tip Board:** Users can **Add** new tips and **Delete** existing ones.
+* **Multi-Page Navigation:** Seamless client-side routing between Home and About pages using `React Router`.
+* **Responsive Design:** Styled with CSS Modules for a clean, conflict-free UI.
+* **Loading States:** Polished UX with loading indicators while fetching data.
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Framework:** React (Vite)
+* **Language:** JavaScript (ES6+)
+* **Styling:** CSS Modules
+* **Routing:** React Router DOM
+* **Deployment:** Vercel
+
+## 💻 Getting Started
+
+To run this project locally on your machine, follow these steps:
+
+1.  **Clone the repository**
+    ```bash
+    git clone [https://github.com/username/mindful-space.git](https://github.com/username/mindful-space.git)
+    cd mindful-space
+    ```
+
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Run the development server**
+    ```bash
+    npm run dev
+    ```
+
+4.  **Open in Browser**
+    Visit the local host link to see the app.
+
+## 🧠 What I Learned
+
+This project was built to master the fundamentals of React development, including:
+* **Component Architecture:** Breaking down the UI into reusable pieces (`Header`, `MoodBooster`, `TipCard`).
+* **Hooks:** Managing state with `useState` and handling side effects (API calls) with `useEffect`.
+* **Data Flow:** Passing props down to children and lifting state up (using callback functions) to manage the list of tips.
+* **API Integration:** Using `async/await` to fetch and display data from a public API.
+
+---
+
+*Created by jjangmo - 2025*
