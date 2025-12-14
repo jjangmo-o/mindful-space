@@ -1,28 +1,34 @@
 import './App.css'; 
-import Header from './components/Header.jsx';
-import MoodBooster from './components/MoodBooster.jsx';
-import TipCard from './components/TipCard.jsx';
+import Header from './components/Header';
+import Home from './components/Home';
+import About from './components/About';
 
-// --- Main App Component ---
+import { Routes, Route, Link } from 'react-router-dom';
 
 function App() {
-  const healthTips = [
-    { id: 1, title: "Stay Hydrated", desc: "Drinking water helps your brain function." },
-    { id: 2, title: "Disconnect", desc: "Take a break from social media for 30 minutes." },
-    { id: 3, title: "Move Your Body", desc: "A short walk can improve your mood." }
-  ];
-
   return (
     <div style={{ fontFamily: "Arial, sans-serif", maxWidth: "600px", margin: "0 auto", padding: "20px" }}>
+      
+      {/* The Header stays visible on ALL pages */}
       <Header />
-      <MoodBooster />
-      <hr style={{ margin: "20px 0" }}/>
-      <div>
-        <h2>Quick Tips</h2>
-        {healthTips.map((tip) => (
-          <TipCard key={tip.id} title={tip.title} description={tip.desc} />
-        ))}
-      </div>
+
+      {/* Navigation Bar */}
+      <nav style={{ display: "flex", justifyContent: "center", gap: "20px", margin: "20px 0" }}>
+        {/* We use Link instead of <a href> to stop the page from reloading */}
+        <Link to="/" style={{ textDecoration: "none", color: "#00bcd4", fontWeight: "bold" }}>
+          Home
+        </Link>
+        <Link to="/about" style={{ textDecoration: "none", color: "#00bcd4", fontWeight: "bold" }}>
+          About Us
+        </Link>
+      </nav>
+
+      {/* The "Traffic Controller" - Switches content based on URL */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+
     </div>
   );
 }
